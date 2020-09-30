@@ -5,8 +5,8 @@ Users input item name and quantity. Once "Add Item" is clicked, the new item is 
 Run 'npm install' in command line to install all of the dependencies
 
 ## To get database ready
-Run 'mysql -u [username] -p'
-Key in your password
+Run 'mysql -u [username] -p';
+Key in your password;
 Open schema.sql and key in the command inside MySQL shell
 
 ## Note
