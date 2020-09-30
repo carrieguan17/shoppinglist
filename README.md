@@ -5,9 +5,9 @@ Users input item name and quantity. Once "Add Item" is clicked, the new item is 
 Run 'npm install' in command line to install all of the dependencies
 
 ## To get database ready
-Run 'mysql -u [username] -p';
-Key in your password;
-Open schema.sql and key in the command inside MySQL shell
+1. Run 'mysql -u [username] -p';
+2. Key in your password;
+3. Open schema.sql and key in the command inside MySQL shell
 
 ## Note
 Shopping List is created as a simple full-stack app. See plan.txt for details how this app was built step by step
