@@ -1,0 +1,30 @@
+Download the project
+  Fork the repo
+  Clone the repo
+Find the root directory (It's the one with the package.json)
+  install dependencies (npm install)
+Explore the config/existing files to determine intended structure
+  Create missing folders/files
+Compile/Transpile the project
+Start a server
+  live-server OR node/nodemon
+    may need to move static files for the server
+Look at the rendered page
+Code!
+
+
+Inverse Data Flow:
+1) write a function in your model
+2) bind the this value of that function to the model
+3) pass the function as a prop to the child with the data you want in the model
+4) invoke the function in the controller
+
+Connecting Client to Server:
+1) Make an http request in React to the Server
+2) Create a route that listens for that specific request
+3) Write a callback function that executes the code to fulfil that request
+
+POST request:
+1) Capture the submitted form data
+2) Make an http request to the server, sending this data
+3) Create a route to receive the information and console log the incoming data
