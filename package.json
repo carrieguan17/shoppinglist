@@ -5,18 +5,42 @@
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-coverage": "jest --coverage --colors"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "collectCoverageFrom": [
+      "./client/src/components/**/*.jsx",
+      "!./client/src/index.jsx"
+    ],
+    "coverageReporters": [
+      "test"
+    ]
   },
   "author": "Beth Johnson",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-flow": "^7.10.4",
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.23.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-15": "^1.4.2",
+    "enzyme-to-json": "^3.6.1",
+    "fake": "^0.2.2",
+    "jest": "^26.4.2",
+    "react-test-renderer": "^15.6.2",
     "webpack": "^2.2.1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.11.2",
     "axios": "^0.19.2",
     "express": "^4.15.0",
     "jquery": "^3.5.1",
